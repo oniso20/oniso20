@@ -17,7 +17,7 @@
 
 I’m passionate about sustainability and take inspiration from nature when building and refactoring elegant, efficient, and resilient systems. I want to continue working with diverse, passionate groups of people to improve the world we live in, one line of code at a time.
 
-See [my website](https://onisemem.netlify.app/) for more information!
+See my pinned repos and project below or visit [my website](https://onisemem.netlify.app/) for more information!
 
 <h1 align="center">Projects</h1>
 <table bordercolor="#66b2b2">
