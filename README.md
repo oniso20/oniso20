@@ -127,11 +127,3 @@ See [my website](https://onis-emem.com) for more information!
       <img src="https://img.shields.io/static/v1?label=|&message=RESUME&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
 </p>
-
-<h1 align="center">Stats</h1>
-
-<p align="center">
-  <a href="https://github.com/oniso20">
-    <img src="https://github-readme-stats.vercel.app/api?username=oniso20" alt="Onis' GitHub stats" />
-  </a>
-</p>
