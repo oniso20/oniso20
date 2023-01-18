@@ -7,7 +7,7 @@
   <a href="https://www.linkedin.com/in/onis-emem/" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=LINKED-IN&color=cdf998&style=plastic&logo=linkedin&logo-color=white"/>
   </a>
-  <a href="https://docs.google.com/document/d/1pVck1lLRfkx8bA1-Nph4jY2X1ow0MPy6/edit?usp=sharing&ouid=105918699478954208570&rtpof=true&sd=true" target="_blank">
+  <a href="https://docs.google.com/document/d/144uEx5sTLf9MQfAjtuxsrzfaq1aMavgo/edit?usp=sharing&ouid=105918699478954208570&rtpof=true&sd=true" target="_blank">
       <img src="https://img.shields.io/static/v1?label=|&message=RESUME&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
 </p>
@@ -123,7 +123,7 @@ See [my website](https://onis-emem.com) for more information!
   <a href="https://www.linkedin.com/in/onis-emem/" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=LINKED-IN&color=cdf998&style=plastic&logo=linkedin&logo-color=white"/>
   </a>
-  <a href="https://docs.google.com/document/d/1pVck1lLRfkx8bA1-Nph4jY2X1ow0MPy6/edit?usp=sharing&ouid=105918699478954208570&rtpof=true&sd=true" target="_blank">
+  <a href="https://docs.google.com/document/d/144uEx5sTLf9MQfAjtuxsrzfaq1aMavgo/edit?usp=sharing&ouid=105918699478954208570&rtpof=true&sd=true" target="_blank">
       <img src="https://img.shields.io/static/v1?label=|&message=RESUME&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
 </p>
