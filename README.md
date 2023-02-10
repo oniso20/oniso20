@@ -127,3 +127,11 @@ See [my website](https://onis-emem.com) for more information!
       <img src="https://img.shields.io/static/v1?label=|&message=RESUME&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
 </p>
+
+<div display="block" align="center">
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=oniso20&hide=jupyter%20notebook,html&theme=default)
+
+![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=oniso20&theme=default&utcOffset=8)
+
+</div>
