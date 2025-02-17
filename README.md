@@ -1,7 +1,7 @@
 <img src="images/card.png" width="100%" height="300px">
 
 <p align="center">
-  <a href="https://onis-emem.com" target="_blank">
+  <a href="https://onis-emem.notion.site/hello" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
   <a href="https://www.linkedin.com/in/onis-emem/" target="_blank">
@@ -14,7 +14,7 @@
 
 I’m passionate about sustainability and take inspiration from nature when building and refactoring elegant, efficient, and resilient systems. I want to continue working with diverse, passionate groups of people to improve the world we live in, one line of code at a time.
 
-See [my website](https://onis-emem.com) for more information!
+See [my website](https://onis-emem.notion.site/hello) for more information!
 
 <h1 align="center">Projects</h1>
 <table bordercolor="#66b2b2">
@@ -60,9 +60,9 @@ See [my website](https://onis-emem.com) for more information!
   
   <tr>
     <td width="50%" height="150px" valign="top">
-      <h3 align="center">onis-emem.com</h3>
+      <h3 align="center">onis-emem.notion.site/hello</h3>
       <br />
-        <a target="_blank" href="https://onis-emem.com">
+        <a target="_blank" href="https://onis-emem.notion.site/hello">
           <img src="images/onis-emem.gif" width="100%" alt="Onis Portfolio"/>
         </a>
       <br />
@@ -70,7 +70,7 @@ See [my website](https://onis-emem.com) for more information!
   <a href="https://github.com/oniso20/portfolio" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
   </a>
-  <a href="https://onis-emem.com" target="_blank">
+  <a href="https://onis-emem.notion.site/hello" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
       </p>
@@ -117,7 +117,7 @@ See [my website](https://onis-emem.com) for more information!
 <h1 align="center">Connect</h1>
 
 <p align="center">
-  <a href="https://onis-emem.com" target="_blank">
+  <a href="https://onis-emem.notion.site/hello" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=23555f&style=plastic&logo=react&logo-color=white"/>
   </a>
   <a href="https://www.linkedin.com/in/onis-emem/" target="_blank">
