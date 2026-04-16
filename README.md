@@ -14,27 +14,27 @@ Ten years in, I still merge code every week. The gap between *shipping with agen
 ### [Inktrail](https://inktrail.ai) — the workspace where agents ship
 A real‑time collaborative workspace. Five tools replaced (docs · canvas · presentations · transcription · publishing). Repositioned Q2 2026 from "AI workspace" to **agent‑native workspace**: every agent action is diffable, reversible, and leaves a trail.
 
-**Stack.** Elixir/Phoenix + MongoDB for real‑time collab (Phoenix channels + prosemirror‑collab + WAL canvas ops) · React + TypeScript + Vite + PixiJS (GPU‑rendered canvas with a validation pipeline of 50 tests + WCAG AA contrast) · Tauri desktop · Clerk · Stripe · OpenRouter · Cloudflare R2 · Fly.io. Private repos live under [`inktrail-ai/*`](https://github.com/inktrail-ai).
+**Stack.** Elixir/Phoenix on the backend with real‑time channels; React + TypeScript + Vite on the web with a GPU‑rendered canvas; Tauri for desktop. Multi‑provider AI routing, usage‑based billing, cloud‑native storage.
 
 **What shipped recently.**
 
-- **Collaboration** — a sharing model with organisation workspaces, access requests, and role attribution ("via project / via org / via file share"); threaded comments on documents and canvases with reactions
+- **Collaboration** — organisation workspaces with granular sharing, access requests with approval flow, threaded comments on documents and canvases with reactions
 - **Content creation** — inline charts (6 types, CSV import, AI‑generated from plain language); presentation mode on canvas; a 178‑template library for screens and diagrams; bidirectional embedding between documents and canvases
-- **Publishing** — Medium‑quality public pages with serif typography, RSS feeds, and public profiles at `/u/:username`; cover images, social share previews, custom domains for knowledge bases
-- **Admin & billing** — standalone [admin.inktrail.ai](https://admin.inktrail.ai) with Google OAuth and role‑based access; credit metering with real cost reconciliation against OpenRouter; referral system with ROI analytics
-- **Files & platform** — native support for Word, PowerPoint, and Excel attachments across every chat surface; Google Drive connector; desktop app via Tauri
+- **Publishing** — Medium‑quality public pages with serif typography, RSS feeds, and public creator profiles; cover images, social share previews, custom domains for knowledge bases
+- **Admin & billing** — internal operator tooling with role‑based access; usage metering with real cost reconciliation against the AI gateway; referral programme with ROI analytics
+- **Files & platform** — native support for Word, PowerPoint, and Excel attachments across every chat surface; Google Drive connector; desktop app
 
 ### [PrintEasy](https://printeasy.io) — a creator marketplace for African artists
 Pivoting from a B2B print‑on‑demand vendor platform to a B2C creator marketplace (the "Redbubble of Africa"). Full backend rewrite in April 2026 — 58k+ lines across ~280 files, **230+ API endpoints**, 210 tests, zero TypeScript errors.
 
-**Stack.** NestJS + Prisma + PostgreSQL + BullMQ + Redis on Hetzner · Paystack payments with HMAC‑SHA‑512 webhook verification · KWIK delivery · Dojah BVN/CAC KYC · Cloudflare R2 · self‑hosted Grafana + Prometheus + Tempo + Loki for observability.
+**Stack.** NestJS + Prisma + PostgreSQL on a cost‑efficient EU provider · Redis‑backed async jobs · Nigeria‑local payments and delivery partners · automated KYC / KYB · cloud‑native storage · self‑hosted observability.
 
-Separately, `merch-enhance` — a Python + FastAPI + Celery service that generates realistic product mockups using a model‑template library, Gemini Flash (photo‑ref editing), Imagen Fast (text‑to‑image), OpenAI fallback, and Claude for zone detection.
+Separately, `merch-enhance` — a Python + FastAPI + Celery service that generates realistic product mockups from a model‑template library, using a multi‑provider AI routing strategy for photo‑reference editing, text‑to‑image generation, and automated design placement.
 
-Primitives built: auto‑review (30‑second instant publish via sharp image validation, replaces manual admin queue) · partner payouts with batched Paystack Transfers · permission‑based RBAC (SUPPORT/FINANCE/CONTENT) · Redbubble‑style ProductGroup → Style → Variant hierarchy ("design once, toggle styles") · 12 SendGrid email templates · FCM push · full order‑to‑delivery state machine · v1→v2 ETL with dry‑run.
+Primitives built: auto‑review (30‑second instant publish via automated image validation, replaces manual admin queue) · creator and partner payouts with batched transfers · permission‑based RBAC across staff roles · Redbubble‑style ProductGroup → Style → Variant hierarchy ("design once, toggle styles") · transactional email + push notifications · full order‑to‑delivery state machine · safe v1 → v2 data migration with dry‑run mode.
 
-### [conductor](https://github.com/inktrail-ai/conductor) — a DAG engine for Claude agents *(private)*
-A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as DAGs, built on the Claude Agent SDK + MCP. Bounded concurrency · artifact passing via template interpolation · persistent memory (an LLM extracts learnings categorised as decision/pattern/gotcha/fact/error, stored in SQLite FTS5) · git worktree isolation · cost/budget controls · retry logic. 16 example workflows power real Inktrail feature rollouts (`sharing-phase-a.yaml` → `-d.yaml`, `publishing-sprint-1/2/3.yaml`, `comments-redesign.yaml`).
+### conductor — a DAG engine for Claude agents *(private)*
+A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as directed acyclic graphs, built on the Claude Agent SDK + MCP. Bounded concurrency, artifact passing between stages, persistent memory with searchable learnings, isolated execution per phase, cost and budget controls, retry logic. Used to orchestrate real multi‑phase feature rollouts — parallel backend and frontend work that would otherwise be serial.
 
 ### [TechSynergy](https://techsynergy.io) — career platform for African tech talent
 The company I founded in 2023. TechSynergy connects African talent with global opportunities through a mentorship and project marketplace — **$7K MRR in year one**, **1,000+ job placements**, **$50K+ in salaries facilitated** across a 1,000‑member community.
@@ -50,9 +50,9 @@ Operational tooling we run in‑house:
 ## How I work
 
 - **Ship small, iterate hot.** Three active companies — PM at Yolo Group by day, TechSynergy and Inktrail by night — force ruthless scope discipline. I favour one bundled PR over churn, revert publicly when I'm wrong (Inktrail has a 9‑commit wireframe revert to prove it), and capture the *why* in memory rather than comments.
-- **Agents, not assistants.** I build systems where agents do real work with guardrails: strict server‑side validators that round‑trip errors back to the model so it self‑corrects in 1–2 turns, hard surface splits (`/canvas` prototyping vs `/design` polished) enforced at four layers (schema · dispatch · prompt · tests), skill registries with `applicable?` callbacks, and cost reconciliation loops on every LLM call.
-- **Real‑time internals are a first‑class skill.** Collaborative editors that don't lose your work under concurrent edits; canvases that stay in sync when the network blinks; agents that can co‑edit alongside humans without trashing each other's state. I've shipped all three in production and know where the sharp edges are.
-- **Code taste before dependency.** shadcn/ui + CSS variables + HugeIcons religiously. Mobile‑first by default. Design‑token before dependency. Pure‑Elixir `:zip.unzip` + regex over Office Open XML when a library would add maintenance debt.
+- **Agents, not assistants.** I build systems where agents do real work with guardrails: strict server‑side validation that round‑trips errors back to the model so it self‑corrects in 1–2 turns, clear separation between prototyping and polished output surfaces enforced from schema to prompts, and cost reconciliation loops on every LLM call.
+- **Real‑time internals are a first‑class skill.** Collaborative editors that don't lose work under concurrent edits; canvases that stay in sync when the network blinks; agents that co‑edit alongside humans without trashing each other's state. I've shipped all three in production and know where the sharp edges are.
+- **Code taste before dependency.** Design tokens before dependencies. Mobile‑first by default. The smaller primitive over the heavier library when it means less maintenance debt.
 
 ---
 
@@ -68,16 +68,16 @@ TipTap · PixiJS · Excalidraw · ELK · ECharts
 NestJS + Prisma · Elixir / Phoenix · Node.js · Python / FastAPI
 
 **AI**
-Claude Agent SDK · Model Context Protocol (MCP) · OpenRouter as a single gateway for Claude, GPT‑5, Gemini, DeepSeek and Nemotron · rembg · sharp
+Claude Agent SDK · Model Context Protocol (MCP) · multi‑model routing via a single LLM gateway · computer‑vision pipelines for image validation
 
 **Data**
-PostgreSQL · MongoDB · Turso / libSQL · Redis + BullMQ · Prisma · Drizzle
+PostgreSQL · MongoDB · libSQL · Redis with job queues · modern ORMs (Prisma, Drizzle)
 
 **Infra & observability**
-Fly.io · Vercel · Cloudflare Workers · Hetzner · Cloudflare R2 · PostHog · Grafana + Prometheus + Tempo + Loki
+Fly.io · Vercel · Cloudflare Workers · EU bare‑metal · cloud‑native object storage · PostHog · self‑hosted Grafana + Prometheus + Tempo + Loki
 
 **Payments & auth**
-Clerk · Stripe · Paystack · Google OAuth · JWT (jose + HMAC session)
+Clerk · Stripe · regional payment gateways · Google OAuth · JWT
 
 ---
 
