@@ -25,7 +25,7 @@ A real‑time collaborative workspace. Five tools replaced (docs · canvas · pr
 - **Files & platform** — native support for Word, PowerPoint, and Excel attachments across every chat surface; Google Drive connector; desktop app
 
 ### [PrintEasy](https://printeasy.io) — a creator marketplace for African artists
-Pivoting from a B2B print‑on‑demand vendor platform to a B2C creator marketplace (the "Redbubble of Africa"). Full backend rewrite in April 2026 — 58k+ lines across ~280 files, **230+ API endpoints**, 210 tests, zero TypeScript errors.
+Pivoting from a B2B print‑on‑demand vendor platform to a B2C creator marketplace.
 
 **Stack.** NestJS + Prisma + PostgreSQL on a cost‑efficient EU provider · Redis‑backed async jobs · Nigeria‑local payments and delivery partners · automated KYC / KYB · cloud‑native storage · self‑hosted observability.
 
@@ -33,7 +33,7 @@ Separately, `merch-enhance` — a Python + FastAPI + Celery service that generat
 
 Primitives built: auto‑review (30‑second instant publish via automated image validation, replaces manual admin queue) · creator and partner payouts with batched transfers · permission‑based RBAC across staff roles · Redbubble‑style ProductGroup → Style → Variant hierarchy ("design once, toggle styles") · transactional email + push notifications · full order‑to‑delivery state machine · safe v1 → v2 data migration with dry‑run mode.
 
-### [conductor](https://github.com/oniso20/conductor) — a DAG engine for Claude agents *(open source)*
+### [Conductor](https://github.com/oniso20/conductor) — a DAG engine for Claude agents *(open source)*
 A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as directed acyclic graphs. Built on the [Claude Agent SDK](https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk) + [Model Context Protocol](https://modelcontextprotocol.io).
 
 Bounded concurrency, artifact passing between stages, persistent memory with searchable learnings (SQLite + FTS5), git worktree isolation for parallel branches, cost and budget controls, retry logic, MCP server attachment, and a web dashboard. Originally built to orchestrate real multi‑phase feature rollouts — parallel backend and frontend work that would otherwise be serial — now released as a general‑purpose orchestrator under MIT.
@@ -44,8 +44,7 @@ The company I founded in 2023. TechSynergy connects African talent with global o
 In 2026 we're rebuilding the whole platform on a modern TypeScript stack: a new web app, a consolidated API, and a **dedicated payment service** that runs as its own deployment so mentorship fees, project milestones, and freelancer payouts never compete with core request traffic. PrintEasy (above) sits under the same umbrella as our commerce product.
 
 Operational tooling we run in‑house:
-- Self‑hosted help centre — 53 articles across 9 categories, content in Git, a TipTap‑based CMS using GitHub as the database so edits happen as PRs. Public code: [`techsynergy-help-admin`](https://github.com/techsynergy-io/techsynergy-help-admin) · [`techsynergy-help-center`](https://github.com/techsynergy-io/techsynergy-help-center)
-- Shared observability stack (Grafana + Prometheus + Tempo + Loki) across all TechSynergy products
+- Self‑hosted help centre — 53 articles across 9 categories, content in Git, a TipTap‑based CMS using GitHub as the database so edits happen as PRs.
 
 ---
 
