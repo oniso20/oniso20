@@ -24,6 +24,11 @@ A real‑time collaborative workspace. Five tools replaced (docs · canvas · pr
 - **Admin & billing** — internal operator tooling with role‑based access; usage metering with real cost reconciliation against the AI gateway; referral programme with ROI analytics
 - **Files & platform** — native support for Word, PowerPoint, and Excel attachments across every chat surface; Google Drive connector; desktop app
 
+### [Conductor](https://github.com/oniso20/conductor) — a DAG engine for Claude agents
+A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as directed acyclic graphs. Built on the [Claude Agent SDK](https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk) + [Model Context Protocol](https://modelcontextprotocol.io).
+
+Bounded concurrency, artifact passing between stages, persistent memory with searchable learnings (SQLite + FTS5), git worktree isolation for parallel branches, cost and budget controls, retry logic, MCP server attachment, and a web dashboard. Originally built to orchestrate real multi‑phase feature rollouts — parallel backend and frontend work that would otherwise be serial.
+
 ### [PrintEasy](https://printeasy.io) — a creator marketplace for African artists
 Pivoting from a B2B print‑on‑demand vendor platform to a B2C creator marketplace.
 
@@ -32,11 +37,6 @@ Pivoting from a B2B print‑on‑demand vendor platform to a B2C creator marketp
 Separately, `merch-enhance` — a Python + FastAPI + Celery service that generates realistic product mockups from a model‑template library, using a multi‑provider AI routing strategy for photo‑reference editing, text‑to‑image generation, and automated design placement.
 
 Primitives built: auto‑review (30‑second instant publish via automated image validation, replaces manual admin queue) · creator and partner payouts with batched transfers · permission‑based RBAC across staff roles · Redbubble‑style ProductGroup → Style → Variant hierarchy ("design once, toggle styles") · transactional email + push notifications · full order‑to‑delivery state machine · safe v1 → v2 data migration with dry‑run mode.
-
-### [Conductor](https://github.com/oniso20/conductor) — a DAG engine for Claude agents *(open source)*
-A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as directed acyclic graphs. Built on the [Claude Agent SDK](https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk) + [Model Context Protocol](https://modelcontextprotocol.io).
-
-Bounded concurrency, artifact passing between stages, persistent memory with searchable learnings (SQLite + FTS5), git worktree isolation for parallel branches, cost and budget controls, retry logic, MCP server attachment, and a web dashboard. Originally built to orchestrate real multi‑phase feature rollouts — parallel backend and frontend work that would otherwise be serial — now released as a general‑purpose orchestrator under MIT.
 
 ### [TechSynergy](https://techsynergy.io) — career platform for African tech talent
 The company I founded in 2023. TechSynergy connects African talent with global opportunities through a mentorship and project marketplace — **$7K MRR in year one**, **1,000+ job placements**, **$50K+ in salaries facilitated** across a 1,000‑member community.
