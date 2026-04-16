@@ -33,8 +33,10 @@ Separately, `merch-enhance` — a Python + FastAPI + Celery service that generat
 
 Primitives built: auto‑review (30‑second instant publish via automated image validation, replaces manual admin queue) · creator and partner payouts with batched transfers · permission‑based RBAC across staff roles · Redbubble‑style ProductGroup → Style → Variant hierarchy ("design once, toggle styles") · transactional email + push notifications · full order‑to‑delivery state machine · safe v1 → v2 data migration with dry‑run mode.
 
-### conductor — a DAG engine for Claude agents *(private)*
-A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as directed acyclic graphs, built on the Claude Agent SDK + MCP. Bounded concurrency, artifact passing between stages, persistent memory with searchable learnings, isolated execution per phase, cost and budget controls, retry logic. Used to orchestrate real multi‑phase feature rollouts — parallel backend and frontend work that would otherwise be serial.
+### [conductor](https://github.com/oniso20/conductor) — a DAG engine for Claude agents *(open source)*
+A Bun + TypeScript CLI orchestrator that runs multi‑stage agent workflows defined in YAML as directed acyclic graphs. Built on the [Claude Agent SDK](https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk) + [Model Context Protocol](https://modelcontextprotocol.io).
+
+Bounded concurrency, artifact passing between stages, persistent memory with searchable learnings (SQLite + FTS5), git worktree isolation for parallel branches, cost and budget controls, retry logic, MCP server attachment, and a web dashboard. Originally built to orchestrate real multi‑phase feature rollouts — parallel backend and frontend work that would otherwise be serial — now released as a general‑purpose orchestrator under MIT.
 
 ### [TechSynergy](https://techsynergy.io) — career platform for African tech talent
 The company I founded in 2023. TechSynergy connects African talent with global opportunities through a mentorship and project marketplace — **$7K MRR in year one**, **1,000+ job placements**, **$50K+ in salaries facilitated** across a 1,000‑member community.
