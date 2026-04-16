@@ -3,9 +3,22 @@
 **Product Manager & Engineer · Tallinn, Estonia**
 **Building at the agent‑native frontier — [inktrail.ai](https://inktrail.ai) · [printeasy.io](https://printeasy.io) · [techsynergy.io](https://techsynergy.io)**
 
-I lead platform and AI products at [Yolo Group](https://www.yologroup.com/) ([Hub88](https://hub88.io), the B2B iGaming aggregator), founded [TechSynergy](https://techsynergy.io), and ship [Inktrail](https://inktrail.ai) on the side — a real‑time collaborative workspace where agents ship.
+In a world where anyone can ship code with AI, output stops being scarce. **Taste becomes the scarce thing** — knowing what to ship, when to ship it, what to cut, and what to protect.
 
-Ten years in, I still merge code every week. The gap between *shipping with agents* and *managing shipping with agents* is closing fast, and the PMs who understand the build are the PMs who win the next decade. I'm betting my career on that.
+I sit at the intersection of product judgment and builder hands because that's where leverage lives now. Three companies. One operator. Agents as force multipliers, not replacements. I lead platform and AI products at [Yolo Group](https://www.yologroup.com/) / [Hub88](https://hub88.io), I founded [TechSynergy](https://techsynergy.io), and I ship [Inktrail](https://inktrail.ai) on the side — the workspace where agents ship.
+
+---
+
+## What I bring
+
+Six things a pure coder or a traditional PM will miss.
+
+1. **Restraint over output.** I know when to revert, when to cut scope, when to ship small. Multi‑product operation at solo scale builds the muscle; AI making output cheap makes the muscle matter more.
+2. **Repositioning as a PM discipline.** Moving a brand from commodity ("AI workspace") to owned ("agent‑native workspace") is a sentence that ships before a single feature does. Traditional PMs don't do this work. Coders can't.
+3. **Agent‑era product craft.** Building *for* agents, *with* agents, *alongside* agents — while keeping humans in control. Guardrails, cost loops, defence‑in‑depth. This isn't "adding AI to a product." This is shipping products where agents do real work.
+4. **Frameworks over features.** Sacred Seven review lens. The artefact pipeline. The monthly report template. A 16‑week PM curriculum. Systems that survive personnel changes and scale past me.
+5. **Taste across surfaces.** I can write a PRD engineering wants to build, a marketing brief sales wants to sell, and a commit a reviewer would approve. The gap between those three documents is where most products fail.
+6. **Judgment about exposure.** I know what to keep internal and what to publish. This portfolio was scrubbed with that instinct — and if you're reading it, that *is* the signal.
 
 ---
 
@@ -19,7 +32,7 @@ A real‑time collaborative workspace. Five tools replaced (docs · canvas · pr
 **What shipped recently.**
 
 - **Collaboration** — organisation workspaces with granular sharing, access requests with approval flow, threaded comments on documents and canvases with reactions
-- **Content creation** — inline charts (6 types, CSV import, AI‑generated from plain language); presentation mode on canvas; a 178‑template library for screens and diagrams; bidirectional embedding between documents and canvases
+- **Content creation** — inline charts generated from plain language or CSV; presentation mode on canvas; a template library for screens and diagrams; bidirectional embedding between documents and canvases
 - **Publishing** — Medium‑quality public pages with serif typography, RSS feeds, and public creator profiles; cover images, social share previews, custom domains for knowledge bases
 - **Admin & billing** — internal operator tooling with role‑based access; usage metering with real cost reconciliation against the AI gateway; referral programme with ROI analytics
 - **Files & platform** — native support for Word, PowerPoint, and Excel attachments across every chat surface; Google Drive connector; desktop app
@@ -43,8 +56,7 @@ The company I founded in 2023. TechSynergy connects African talent with global o
 
 In 2026 we're rebuilding the whole platform on a modern TypeScript stack: a new web app, a consolidated API, and a **dedicated payment service** that runs as its own deployment so mentorship fees, project milestones, and freelancer payouts never compete with core request traffic. PrintEasy (above) sits under the same umbrella as our commerce product.
 
-Operational tooling we run in‑house:
-- Self‑hosted help centre — 53 articles across 9 categories, content in Git, a TipTap‑based CMS using GitHub as the database so edits happen as PRs.
+Operational tooling we run in‑house: a self‑hosted help centre with content in Git and a TipTap‑based CMS that uses GitHub as the database, so content edits happen as PRs — no GitBook fees, no vendor lock‑in.
 
 ---
 
