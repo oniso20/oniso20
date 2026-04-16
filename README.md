@@ -48,12 +48,23 @@ Operational tooling we run in‑house:
 
 ---
 
-## How I work
+## How I build
 
 - **Ship small, iterate hot.** Three active companies — PM at Yolo Group by day, TechSynergy and Inktrail by night — force ruthless scope discipline. I favour one bundled PR over churn, revert publicly when I'm wrong (Inktrail has a 9‑commit wireframe revert to prove it), and capture the *why* in memory rather than comments.
 - **Agents, not assistants.** I build systems where agents do real work with guardrails: strict server‑side validation that round‑trips errors back to the model so it self‑corrects in 1–2 turns, clear separation between prototyping and polished output surfaces enforced from schema to prompts, and cost reconciliation loops on every LLM call.
 - **Real‑time internals are a first‑class skill.** Collaborative editors that don't lose work under concurrent edits; canvases that stay in sync when the network blinks; agents that co‑edit alongside humans without trashing each other's state. I've shipped all three in production and know where the sharp edges are.
 - **Code taste before dependency.** Design tokens before dependencies. Mobile‑first by default. The smaller primitive over the heavier library when it means less maintenance debt.
+
+---
+
+## How I do product
+
+- **Problem first, numbers second, scope third.** Every PRD opens with the diagnosis before the prescription — what's failing, by how much, and why now. If the data isn't there, the spec isn't ready.
+- **Positioning before building.** Who it's for, who it's *not* for, what success looks like — written before a single feature gets scoped. Repositioning work starts with the sentence that replaces the tagline, not the components that replace the screens.
+- **Phased shipping with rationale.** Phase 1 → Phase 1.5 → Phase 2 isn't arbitrary; the order comes from where leverage compounds fastest. I can defend every sequence decision against "can't we just do it all now."
+- **A pipeline, not a pile of docs.** Strategy → PRD → user story map → design brief → launch brief → release‑day retro → monthly report. Each artefact is written for a different audience and pulls only what's needed from the one before it. Nothing is written twice.
+- **Release day is a data event.** Every release ships with a feedback capture and an issue log. Retros happen within days, not weeks, and feed the next monthly report. Metrics are always diffed against the previous period.
+- **I teach what I build.** A 16‑week product management curriculum. A custom PM productivity toolkit built on the Claude Agent SDK — seven skills that run from the command line, dogfooded on my own product work.
 
 ---
 
