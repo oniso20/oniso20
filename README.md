@@ -51,12 +51,6 @@ Real‑time delivery tracking on Node at Dado Food (Enugu). Scrum master and ful
 
 ---
 
-## Stack
-
-Day‑to‑day I work in TypeScript (Next.js, NestJS + Prisma), Elixir/Phoenix, and Python/FastAPI on Postgres. Canvas and editor work via PixiJS and TipTap. AI through the Claude Agent SDK and MCP, routed through a single gateway so cost and model choice stay in one place. Deploys on Fly.io and Vercel, object storage on R2, product analytics on PostHog.
-
----
-
 ## Elsewhere
 
 [LinkedIn](https://www.linkedin.com/in/onis-emem/) · onis.c.emem@gmail.com · long‑form: [onis-emem.notion.site](https://onis-emem.notion.site/hello)
