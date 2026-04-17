@@ -1,5 +1,5 @@
 # Onis Emem
-**Senior Product Manager · Tallinn**
+**Product & Engineering · Tallinn**
 
 I'm a PM at Hub88 (Yolo Group), the B2B iGaming aggregator where I own HubConnect and Hub AI. Seven+ years as an engineer before product, with earlier programme management in Nigeria. My home ground is **regulated integration platforms** — partner onboarding, KYC/KYB, developer‑facing workflows where legal, engineering, commercial, and a partner on the other side all have to agree before anything ships. I've done that work in insurance and now in B2B iGaming.
 
